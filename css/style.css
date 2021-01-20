@@ -1,277 +1,324 @@
-#elementHeadergauche {
-    float:left;
-    }
-  #elementHeaderdroite {
-    float:right;
-    }
-  main{
-    font-family: Raleway ,serif;
-    }
-  body{
+
+@font-face {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://fonts.gstatic.com/s/raleway/v18/1Ptxg8zYS_SKggPN4iEgvnHyvveLxVvaorCIPrE.woff2) format('woff2');
+}
+.general-header {
+  width:100%;
+  }
+#left-header-element {
+  float:left;
+  }
+#right-header-element {
+  float:right;
+  }
+.nav-bar-right-header {
+  margin-left: 10px;
+  margin-right: 10px;
+  padding-top: 21px;
+  color: blue;
+  border-top: 3px transparent solid;
+  border-bottom: 3px transparent solid;
+  }
+.nav-bar-right-header:hover { 
+  border-top: 3px blue solid;
+  color: powderblue;
+  }
+main {
+  font-family: Raleway, serif;
+  }
+body {
   float:left;
   padding: 0px;
   }
-  .outilDeRecherche{
+#sous-titre-général {
+  color: grey;
+  }
+.search-tool {
     width:100%;
     float:left;
   }
-  .generalHeader{
-    width:100%;
+.search-form {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
   }
-  .hebergementGauche{
-    display: flex;
-    align-items: auto;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    background-color: rgb(242,242,242);
-    border-radius: 25px;
-    width: fit-content ;
-    margin: 2px;
-    }
-  .hebergementGaucheHeaderTitre{
-    align-items: left;
-    display: flex;
-    order: 1;
-    height: 0;
-    margin-left: 20px;
-    }
-  .partieCentreEtGaucheFigure{
-    order:2;
-    background-color: white; 
-    border-radius: 25px;
-    padding: 10px;
-    margin: 3px;
-    box-shadow: 0 0 20px #0000002e;
-    cursor: pointer;
-    }
-  .break {
-    flex-basis: 100%;
-    height: 0;
-    width: 100%;
-    padding: 0px;
-    }
-  .fa-star{
-    color: grey;
-    }
-  .checked {
-    color: blue;
-    }
-  .partieCentreEtGaucheFigureimg{   
-    min-width:  240px;
-    max-width: 100%;
-    max-height: 100%;
-    height: 120px;
-    object-fit: fill;
-    border-radius: 15px 15px 0 0;
-    }
-  .partiehebergementPopulaireFigureimg{   
-    width:  120px;
-    max-width: 100%;
-    max-height: 100%;
-    height: 170px;
-    object-fit: fill;
-    border-radius: 15px 0 0 15px;
-    float: left;
-    }
-  .hebergementPopulaire{
-    position: flex;
-    top: 20px;
-    float: right;
-    background-color: rgb(242,242,242);
-    border: 1px transparent;
-    padding: 5px;
-    border-radius: 25px;
-    min-width: 39px;   
-    }
-  .flexContainerGaucheEtPopulaire{
-    width: 100%;
-    min-height: 300px;
-    margin: 0 auto;    
-    display: flex; 
+.logo-holder-research-bar {
+  display: flex;
+  border: solid 2px;
+  border-color: rgb(222, 235, 255);
+  padding: 4px;
+  border-radius: 15px 15px 15px 15px;   
+  margin: -3px;  
   }
-  .mainDIV{
-    display: flex;
-    max-width: 100%;
-    background-color: rgb(242,242,242);
-    }
-  .sousTitreODR{
-    color: grey;
-    }
-  .filtrederecherche{
-   margin: 20px;
-   margin-left: 3px;
+#map-marker {
+  color: black;
+  background-color: rgb(242,242,242);
+  border: rgb(242,242,242);
+  border-radius: 15px 0 0 15px;
+  padding: 1.3rem 1.5rem;
+  } 
+.search-bar-filter {
+  margin: 15px;
   }
-  .filtreDeRechercheBar{
-    margin: 15px;
+.research-filter-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: 0px;
   }
-  .filtreDeRechercheContainer {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    align-items: baseline;
-    margin: 0px;
-    }
-  .figureFiltreDeRecherche{
-    background-color: white; 
-    box-shadow: 0 0 0 3px lightgrey;
-    border-color: lightgrey;
-    padding: 5px;
-    border-radius: 90px;
-    margin: -7px;
-    }
-  .iconesvg{
-    width: 20px;
-    height: 20px;
-    background-color: rgb(222, 235, 255);
-    border: grey;
-    border-width: 2px;
-    margin: 19 px;
-    }
-    .iconesvgNombreDeRésultat{
-      width: 20px;
-      height: 20px;
-      background-color: white;
-      border: white;
-      border-width: 2px;
-      margin: 19 px;
-      }
-  .iconesvgGPS{
-    width: 20px;
-    height: 20px;
-    color:blue;
-    background-color: rgb(242,242,242);
-    border: rgb(242,242,242);
-    border: none;
-    border-radius: 15px 0 0 15px;
-    padding: 1.3rem 1.5rem;
-    font-family: "Raleway", "Sans serif";
-    font-size: 1rem;
-    
-    top:0.7rem;
-      }
 
-  .SearchButton{
-    background-color: #0065FC;
-    color: white;
-    font-weight: bold;
-    border: none;
-    border-radius: 0 1rem 1rem 0;
-    padding: 1.5 1.5rem;
-    font-family: "Raleway", "Sans serif";
-    font-size: 1rem;
-    cursor: pointer;
+.search-filter-figure {
+  background-color: white; 
+  border-radius: 170px;
+  padding: -10px;
+  margin: 5px -30px;
+  cursor: pointer;
   }
-  .NombreDeRésultat{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    }
-  .textNombreDeRésultat{
-    margin: 10px;
+.search-filter-figure:hover {
+  transform: scale(1.01);
+  background-color: rgb(243, 248, 255);
   }
-  .formeDeRecherche{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    }
-  .logoHolder{  
-    border: solid 2px;
-    border-color: rgb(222, 235, 255);
+.number-of-results {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  border: 2px rgb(242,242,242) solid;
+  border-radius: 170px;
+  }
+.number-of-results:hover {
+  transform: scale(1.01);
+  background-color: rgb(243, 248, 255);
+  }
+.logo-holder {
+  display:flex;
+  align-items: center;
+  border: solid 2px;
+  border-color: rgb(222, 235, 255);
+  background-color: white;
+  border-radius: 100px;   
+  margin: -3px;
+  }
+.svg-icone {   
+  height: 20px;
   background-color: rgb(222, 235, 255);
-    padding: 17px;
-    border-radius: 100px;   
-    margin: -3px;
-    }
-    .logoHolderNombreDeRésultat{  
-      padding: 10px;
-      border-radius: 100px;   
-      margin: 0px;
-      }
-  .logoHolderResearchBar{
-    display: flex;
-    border: solid 2px;
-    border-color: rgb(222, 235, 255);
-    padding: 4px;
-    border-radius: 15px 15px 15px 15px;   
-    margin: -3px;  
+  border: grey;
+  border-width: 2px ;
+  margin: 0 px;
   }
-  .site-search {
-    border-right: none;
-    border-left: none;
-    border-top: rgb(222, 235, 255);
-    border-bottom: rgb(222, 235, 255);
-    padding: 0 1.5rem;
-    box-sizing: border-box;
-    width: 14rem;
-    font-size: 1.23rem;
-    font-weight: bold;
-    font-family: "Raleway", "Sans serif";
+.search-bar-filter {
+  margin: 20px;
+  margin-left: 3px;
+ }
+#number-of-results-figure {  
+  padding: 10px;
+  border-radius: 100px;   
+  margin: 0px;
   }
-  .activitésContainerFlex {
-    display: flex; 
-    flex-flow: column wrap;
-    align-content: stretch;
-    box-shadow: 0 0 20px #0000002e;
-    width: 100%;
-    height: 550px;
-    justify-content: space-evenly;
+#number-of-results-icone {
+  width: 20px;
+  height: 20px;
+  background-color: white;
+  border: white;
+  border-width: 2px;
+  margin: 19 px;
   }
-  .itemlong {
-    background-color: white;
-    border: solid #F2F2F2;
-    max-width: 275px;
-    box-shadow: 0 0 20px #0000002e;
-    flex-grow: 3; 
-    max-height: 480px;
-    height: 90%;
-    width: 22%;
-    margin: 2px;
-    cursor: pointer;
-    padding:0px;
-    border-radius: 15px;
+#number-of-results-text {
+  margin: 10px;
   }
-  .itemmiddle {
-    background-color: white;
-    border: solid #F2F2F2;
-    box-shadow: 0 0 20px #0000002e;
-    max-width: 275px;
-    max-height: 235px;
-    flex-grow: 2;
-    height: 60%;
-    width: 22%;
-    margin: 2px;
-    cursor: pointer;
-    border-radius: 15px;
+#left-popular-flex-container {
+  width: 100%;
+  min-height: 300px;
+  margin: 0 auto;    
+  display: flex; 
   }
-  .itemsmall {
-    background-color: white;
-    border: solid #F2F2F2;
-    box-shadow: 0 0 20px #0000002e;
-    max-width: 275px;
-    max-height: 210px;
-    flex-grow: 1; 
-    height: 50%;
-    width: 22%;
-    margin: 2px;
-    cursor: pointer;
-    border-radius: 15px;
+#left-housing {
+  display: flex;
+  align-items: auto;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  background-color: rgb(242,242,242);
+  border-radius: 25px;
+  width: fit-content ;
+  margin: 2px;
   }
-  .activityImg{   
-    min-width:  275px;
-    width:22%;
-    height: 80%;
-    max-width: 100%;
-    max-height: 80%;
-    object-fit: fill;
-    border-radius: 15px 15px 0 0;
-    }
-    .activitésFigureImgCaption{
-      padding: 0px;
-      margin: 10px;
-      font-weight: bold;
-    }
-    .nav-barRightHeader{
-      margin-left: 10px;
-      margin-right: 10px;
+.housing-header-title {
+  align-items: left;
+  display: flex;
+  order: 1;
+  height: 0;
+  margin-left: 20px;
+  }
+.housing-header-title:hover {
+  transform: scale(1.01);   
+  cursor: pointer; 
+  }
+.break {
+  flex-basis: 100%;
+  height: 0;
+  width: 100%;
+  padding: 0px;
+  }
+
+.center-and-left-figure {
+  order:2;
+  background-color: white; 
+  border-radius: 25px;
+  padding: 10px;
+  margin: 3px;
+  box-shadow: 0 0 20px #0000002e;
+  cursor: pointer;
+  }
+.center-and-left-figure:hover {
+  transform: scale(1.01); 
+}
+.center-and-left-figure-img {   
+  min-width:  240px;
+  max-width: 100%;
+  max-height: 100%;
+  height: 120px;
+  object-fit: fill;
+  border-radius: 15px 15px 0 0;
+  }
+.fa-star {
+  color: grey;
+  }
+.checked {
+  color: blue;
+  }
+.popular-housing {
+  position: flex;
+  top: 20px;
+  float: right;
+  background-color: rgb(242,242,242);
+  border: 1px transparent;
+  padding: 5px;
+  border-radius: 25px;
+  min-width: 39px;   
+   }
+.popular-housing-title:hover {
+  transform: scale(1.01);   
+  cursor: pointer; 
+    }   
+.popular-housing-image {   
+  width:  120px;
+  max-width: 100%;
+  max-height: 100%;
+  height: 170px;
+  object-fit: fill;
+  border-radius: 15px 0 0 15px;
+  float: left;
+  }
+#activity-container {
+  display: flex; 
+  flex-flow: column wrap;
+  align-content: stretch;
+  box-shadow: 0 0 20px #0000002e;
+  width: 100%;
+  height: 550px;
+  justify-content: space-evenly;
+  }    
+.activity-figure-caption {
+  padding: 0px;
+  margin: 10px;
+  font-weight: bold;
+  }
+.main-div {
+  display: flex;
+  max-width: 100%;
+  background-color: rgb(242,242,242);
+  }
+#icone-filtre {
+  color:blue;
+  border: blue 20px;
+}
+#search-button {
+  background-color: #0065FC;
+  color: white;
+  font-weight: bold;
+  border: none;
+  border-radius: 0 1rem 1rem 0;
+  padding: 1.5 1.5rem;
+  font-family: "Raleway", "Sans serif";
+  font-size: 1rem;
+  cursor: pointer;
+  }
+.site-search {
+  border-right: none;
+  border-left: none;
+  border-top: rgb(222, 235, 255);
+  border-bottom: rgb(222, 235, 255);
+  padding: 0 1.5rem;
+  box-sizing: border-box;
+  width: 14rem;
+  font-size: 1.23rem;
+  font-weight: bold;
+  font-family: "Raleway", "Sans serif";
+  }
+
+.item-long {
+  background-color: white;
+  border: solid #F2F2F2;
+  max-width: 275px;
+  box-shadow: 0 0 20px #0000002e;
+  flex-grow: 3; 
+  max-height: 480px;
+  height: 90%;
+  width: 22%;
+  margin: 2px;
+  cursor: pointer;
+  padding:0px;
+  border-radius: 15px;
+  }
+.item-middle {
+  background-color: white;
+  border: solid #F2F2F2;
+  box-shadow: 0 0 20px #0000002e;
+  max-width: 275px;
+  max-height: 235px;
+  flex-grow: 2;
+  height: 60%;
+  width: 22%;
+  margin: 2px;
+  cursor: pointer;
+  border-radius: 15px;
+  }
+.item-small {
+  background-color: white;
+  border: solid #F2F2F2;
+  box-shadow: 0 0 20px #0000002e;
+  max-width: 275px;
+  max-height: 210px;
+  flex-grow: 1; 
+  height: 50%;
+  width: 22%;
+  margin: 2px;
+  cursor: pointer;
+  border-radius: 15px;
+  }
+.item-long:hover {
+  transform: scale(1.01);
+  }
+.item-middle:hover {
+  transform: scale(1.01);
+  }
+.item-small:hover {
+  transform: scale(1.01);
+  }
+.activity-img {   
+  min-width:  275px;
+  width:22%;
+  height: 80%;
+  max-width: 100%;
+  max-height: 80%;
+  object-fit: fill;
+  border-radius: 15px 15px 0 0;
+  }
+.footer-writing:hover{
+  transform: scale(1.01);   
+  cursor: pointer; 
     }

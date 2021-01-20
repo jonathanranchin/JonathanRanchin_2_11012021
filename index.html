@@ -2,106 +2,106 @@
 <head>
 	<title>Reservia Page de Recherche</title>
 	<meta charset="utf-8" />
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet'>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="  src: url(https://fonts.gstatic.com/s/raleway/v18/1Ptxg8zYS_SKggPN4iEgvnHyvveLxVvaorCIPrE.woff2) format('woff2');
+  " rel="stylesheet" />
+  <script src="https://kit.fontawesome.com/3a103fa7d9.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="css/style.css" /> 
 </head>
 <main>
-  <header id="header" class="generalHeader"> 
+  <header id="header" class="general-header"> 
     <nav id="nav-bar">
-     <link rel="stylesheet" href="css/style.css"> 
-     <div id="elementHeadergauche">
-      <img class="headerImage" src="../JonathanRanchin_2_11012021/images/Logos/Reservia.svg" alt= "Placeholder du logo" >
+     <div id="left-header-element">
+      <img class="header-image" src="images/Logos/Reservia.svg" alt= "Placeholder du logo" >
      </div>
-     <div id="elementHeaderdroite">
+     <div id="right-header-element">
       <ul> 
-       <a class="nav-barRightHeader" href="#hebergementGaucheHeaderTitre">Hébergement</a>
-       <a class="nav-barRightHeader" href="#ActiviésTitre">Activités</a>
+       <a class="nav-bar-right-header" href="#housing-header-title">Hébergement</a>
+       <a class="nav-bar-right-header" href="#activity-title">Activites</a>
        <a href="#">S'inscrire</a>
       </ul>
      </div>
     </nav>
   </header>  
-  
 <body>
-  <div class = "outilDeRecherche"> 
-    <header class = "headerODR">
-      <h1 class="titreODR">Trouver votre hébergement pour des vacances de rêves</h1>
-        <h3 class="sousTitreODR">En plein centre ville ou en pleine nature</h3>
+  <div class="search-tool"> 
+    <header>
+      <h1>Trouver votre hebergement pour des vacances de rêves</h1>
+        <h3 id="sous-titre-général">En plein centre ville ou en pleine nature</h3>
     </header>
-    <form class="formODR">
-      <figure class="researchBarHolder" >
-        <div class="formeDeRecherche" >
-          <figure class="logoHolderResearchBar">  <img class="iconesvgGPS" src="../JonathanRanchin_2_11012021/images/Logos/map-marker-alt-solid.svg" alt="logo GPS"/>
-            <input type="search" class="site-search"      placeholder="Marseille, France" name="q" aria-label="Search through site content">     
-              <button class="SearchButton">
-                <p class="filtreDeRechercheBar" class="conteneuriconefiltretitre">Rechercher</p>
+    <form>
+      <figure>
+        <div class="search-form" >
+          <figure class="logo-holder-research-bar"> <i class="fas fa-map-marker-alt" id="map-marker"></i>
+            <input type="search" class="site-search" placeholder="Marseille, France" name="q" aria-label="Search through site content">     
+              <button id="search-button">
+                <p class="search-bar-filter" class="filter-title-container">Rechercher</p>
               </button>
           </figure> 
         </div>
       </figure>
     </form>
-    <div class="filtreDeRechercheContainer" >
-    <div> <h3 class="filtreDeRechercheTitre">Filtre</h3></div>
-    <div class="filtreDeRecherche" >
-      <figure class="figureFiltreDeRecherche" >
-       <div class="NombreDeRésultat" >
-         <figure class="logoHolder">  
-           <img class="iconesvg" src="../JonathanRanchin_2_11012021/images/Logos/money-bill-wave-solid.svg" alt="logo Economique"/></figure> 
-           <p class="filtreDeRecherche" class="conteneuriconefiltretitre">Economique</p>
+    <div class="research-filter-container" >
+    <div><h3>Filtres</h3></div>
+    <div class="search-bar-filter" >
+      <figure class="search-filter-figure" >
+       <div class="number-of-results" >
+         <figure class="logo-holder">  
+          <div class><i class="fas fa-money-bill-wave" class="svg-icone" id="icone-filtre"></i></div>        
+          <p class="search-bar-filter" class="filter-title-container">Economique</p>
        </div>
       </figure>
     </div>
-    <div class="filtreDeRecherche">
-      <figure class="figureFiltreDeRecherche">
-        <div class="NombreDeRésultat" >
-          <figure class="logoHolder">    
-           <img class="iconesvg" src="../JonathanRanchin_2_11012021/images/Logos/child-solid.svg" alt="logo Familiale"/></figure>
-           <p class="filtreDeRecherche" class="conteneuriconefiltretitre">Familiale</p>
+    <div class="search-bar-filter">
+      <figure class="search-filter-figure">
+        <div class="number-of-results" >
+          <figure class="logo-holder">    
+           <img class="svg-icone" src="images/Logos/child-solid.svg" alt="logo Familiale"/></figure>
+           <p class="search-bar-filter" class="filter-title-container">Familiale</p>
         </div>
       </figure>     
     </div>
-    <div class="filtreDeRecherche">
-      <figure class="figureFiltreDeRecherche">
-        <div class="NombreDeRésultat" >
-          <figure class="logoHolder">
-           <img class="iconesvg" src="../JonathanRanchin_2_11012021/images/Logos/heart-solid.svg" alt="logo Coeur"/></figure>
-           <p class="filtreDeRecherche" class="conteneuriconefiltretitre">Romantique</p>
+    <div class="search-bar-filter">
+      <figure class="search-filter-figure">
+        <div class="number-of-results" >
+          <figure class="logo-holder">
+           <img class="svg-icone" src="images/Logos/heart-solid.svg" alt="logo Coeur"/></figure>
+           <p class="search-bar-filter" class="filter-title-container">Romantique</p>
         </div>
       </figure>
     </div>
-    <div class="filtreDeRecherche">
-      <figure class="figureFiltreDeRecherche">
-        <div class="NombreDeRésultat" >
-          <figure class="logoHolder">    
-            <img class="iconesvg" src="../JonathanRanchin_2_11012021/images/Logos/dog-solid.svg" alt="logo Economique"/></figure>
-            <p class="filtreDeRecherche" class="conteneuriconefiltretitre">Animaux Autorisés</p>
+    <div class="search-bar-filter">
+      <figure class="search-filter-figure">
+        <div class="number-of-results" >
+          <figure class="logo-holder">    
+            <img class="svg-icone" src="images/Logos/dog-solid.svg" alt="logo Economique"/></figure>
+            <p class="search-bar-filter" class="filter-title-container">Animaux Autorisés</p>
         </div>
       </figure>
     </div>
     </div>
-    <div class="NombreDeRésultat" >
-      <figure class="logoHolderNombreDeRésultat">
-        <img class="iconesvgNombreDeRésultat" src="../JonathanRanchin_2_11012021/images/Logos/info-circle-solid.svg" alt="logo information"/></figure>
-        <p class="textNombreDeRésultat">Plus de 500 logements sont disponibles dans cette ville</p>
+    <div class="number-of-results" >
+      <figure id="number-of-results-figure">
+        <img id="number-of-results-icone" src="images/Logos/info-circle-solid.svg" alt="logo information"/></figure>
+        <p id="number-of-results-text">Plus de 500 logements sont disponibles dans cette ville</p>
     </div>
-<div class="flexContainerGaucheEtPopulaire">
-    <div class="hebergementGauche"> 
-    <header class="hebergementGaucheHeader">
+<div id="left-popular-flex-container">
+    <div id="left-housing"> 
+    <header class="housing-header">
       <div >
-    <h2 class="hebergementGaucheHeaderTitre" id="hebergementGaucheHeaderTitre">Hébergement à Marseille</h2>
+    <h2 class="housing-header-title" id="housing-header-title">Hébergement à Marseille</h2>
     </header>
     <div class="break"></div>
-    <article class="partieCentreEtGauche">
-      <figure class="partieCentreEtGaucheFigure">
-        <img class="partieCentreEtGaucheFigureimg"
-             src="../JonathanRanchin_2_11012021/images/Hébergements/marcus-loke-WQJvWU_HZFo-unsplash.jpg"
-             alt="photo d'hébergement 1">
-        <figcaption class="partieCentreEtGaucheFigureCaption"> 
-              <h4 class="partieCentreEtGaucheFigureCaptionTitre">Auberge de la Cannebière</h4>
+    <article>
+      <figure class="center-and-left-figure">
+        <img class="center-and-left-figure-img"
+             src="images/Hébergements/marcus-loke-WQJvWU_HZFo-unsplash.jpg"
+             alt="photo d'hebergement 1">
+        <figcaption> 
+              <h4>Auberge de la Cannebiere</h4>
         </figcaption>
-        <p class="partieCentreEtGaucheFigureDescrption">Nuit à partir de <strong class= "partieCentreEtGaucheFigureDescrptionPrix">25€</strong></p>
-      <div class="partieCentreEtGaucheNote">
+        <p>Nuit à partir de <strong>25€</strong></p>
+      <div>
         <span class="fa fa-star checked"></span>
         <span class="fa fa-star checked"></span>
         <span class="fa fa-star checked"></span>
@@ -110,17 +110,16 @@
       </div>
       </figure>
     </article>
-    <article class="partieCentreEtGauche">
-        <figure class="partieCentreEtGaucheFigure">
-          <img class="partieCentreEtGaucheFigureimg"
-               src="../JonathanRanchin_2_11012021/images/Hébergements/fred-kleber-gTbaxaVLvsg-unsplash.jpg"
-               alt="photo d'hébergement 1" 
-               >
-          <figcaption class="partieCentreEtGaucheFigureCaption"> 
-            <h4 class="partieCentreEtGaucheFigureCaptionTitre">Hotel du Port</h4>
+    <article >
+        <figure class="center-and-left-figure">
+          <img class="center-and-left-figure-img"
+               src="images/Hébergements/fred-kleber-gTbaxaVLvsg-unsplash.jpg"
+               alt="photo d'hebergement 1">
+          <figcaption> 
+            <h4>Hotel du Port</h4>
           </figcaption>
-          <p class="partieCentreEtGaucheFigureDescrption">Nuit à partir de <strong class= "partieCentreEtGaucheFigureDescrptionPrix">52€</strong></p>
-        <div class="partieCentreEtGaucheNote">
+          <p>Nuit à partir de <strong >52€</strong></p>
+        <div>
           <span class="fa fa-star checked"></span>
           <span class="fa fa-star checked"></span>
           <span class="fa fa-star checked"></span>
@@ -129,18 +128,16 @@
         </div>
       </figure>
     </article>
-    </article>
-    <article class="partieCentreEtGauche">
-        <figure class="partieCentreEtGaucheFigure">
-          <img class="partieCentreEtGaucheFigureimg"
-               src="../JonathanRanchin_2_11012021/images/Hébergements/reisetopia-B8WIgxA_PFU-unsplash.jpg"
-               alt="photo d'hébergement 1" 
-               >
-          <figcaption class="partieCentreEtGaucheFigureCaption"> 
-            <h4 class="partieCentreEtGaucheFigureCaptionTitre">Hotel les Mouettes</h4>
+    <article>
+        <figure class="center-and-left-figure">
+          <img class="center-and-left-figure-img"
+               src="images/Hébergements/reisetopia-B8WIgxA_PFU-unsplash.jpg"
+               alt="photo d'hebergement 1">
+          <figcaption> 
+            <h4 >Hotel les Mouettes</h4>
           </figcaption>
-          <p class="partieCentreEtGaucheFigureDescrption">Nuit à partir de <strong class= "partieCentreEtGaucheFigureDescrptionPrix">76€</strong></p>
-        <div class="partieCentreEtGaucheNote">
+          <p>Nuit à partir de <strong >76€</strong></p>
+        <div>
           <span class="fa fa-star checked"></span>
           <span class="fa fa-star checked"></span>
           <span class="fa fa-star checked"></span>
@@ -149,18 +146,16 @@
         </div>
         </figure>
     </article>
-    </article>
-    <article class="partieCentreEtGauche">
-        <figure class="partieCentreEtGaucheFigure">
-          <img class="partieCentreEtGaucheFigureimg"
-               src="../JonathanRanchin_2_11012021/images/Hébergements/annie-spratt-Eg1qcIitAuA-unsplash.jpg"
-               alt="photo d'hébergement 1" 
-               >
-          <figcaption class="partieCentreEtGaucheFigureCaption"> 
-            <h4 class="partieCentreEtGaucheFigureCaptionTitre">Hotel de la Mer</h4>
+    <article >
+        <figure class="center-and-left-figure">
+          <img class="center-and-left-figure-img"
+               src="images/Hébergements/annie-spratt-Eg1qcIitAuA-unsplash.jpg"
+               alt="photo d'hebergement 1">
+          <figcaption> 
+            <h4>Hotel de la Mer</h4>
           </figcaption>
-          <p class="partieCentreEtGaucheFigureDescrption">Nuit à partir de <strong class= "partieCentreEtGaucheFigureDescrptionPrix">46€</strong></p>
-        <div class="partieCentreEtGaucheNote">
+          <p>Nuit à partir de <strong>46€</strong></p>
+        <div>
           <span class="fa fa-star checked"></span>
           <span class="fa fa-star checked"></span>
           <span class="fa fa-star checked"></span>
@@ -169,18 +164,16 @@
         </div>
         </figure>
     </article>
-    </article>
-    <article class="partieCentreEtGauche">
-        <figure class="partieCentreEtGaucheFigure">
-          <img class="partieCentreEtGaucheFigureimg"
-               src="../JonathanRanchin_2_11012021/images/Hébergements/nicate-lee-kT-ZyaiwBe0-unsplash.jpg"
-               alt="photo d'hébergement 1" 
-               >
-                 <figcaption class="partieCentreEtGaucheFigureCaption"> 
-                   <h4 class="partieCentreEtGaucheFigureCaptionTitre">Hotel le Panier</h4>
+    <article>
+        <figure class="center-and-left-figure">
+          <img class="center-and-left-figure-img"
+               src="images/Hébergements/nicate-lee-kT-ZyaiwBe0-unsplash.jpg"
+               alt="photo d'hebergement 1">
+                 <figcaption> 
+                   <h4>Hotel le Panier</h4>
                    </figcaption>
-          <p class="partieCentreEtGaucheFigureDescrption">Nuit à partir de <strong class= "partieCentreEtGaucheFigureDescrptionPrix">23€</strong></p>
-        <div class="partieCentreEtGaucheNote">
+          <p>Nuit à partir de <strong>23€</strong></p>
+        <div>
           <span class="fa fa-star checked"></span>
           <span class="fa fa-star checked"></span>
           <span class="fa fa-star checked"></span>
@@ -189,18 +182,17 @@
         </div>
         </figure>
      </article>
-     </article>
-    <article class="partieCentreEtGauche">
-        <figure class="partieCentreEtGaucheFigure">
-          <img class="partieCentreEtGaucheFigureimg"
-               src="../JonathanRanchin_2_11012021/images/Hébergements/febrian-zakaria-M6S1WvfW68A-unsplash.jpg"
-               alt="photo d'hébergement 1" 
+    <article>
+        <figure class="center-and-left-figure">
+          <img class="center-and-left-figure-img"
+               src="images/Hébergements/febrian-zakaria-M6S1WvfW68A-unsplash.jpg"
+               alt="photo d'hebergement 1" 
                >
-          <figcaption class="partieCentreEtGaucheFigureCaption"> 
-            <h4 class="partieCentreEtGaucheFigureCaptionTitre">Hotel Chez Amina</h4>
+          <figcaption> 
+            <h4>Hotel Chez Amina</h4>
           </figcaption>
-          <p class="partieCentreEtGaucheFigureDescrption">Nuit à partir de <strong class= "partieCentreEtGaucheFigureDescrptionPrix">96€</strong></p>
-        <div class="partieCentreEtGaucheNote">
+          <p>Nuit à partir de <strong>96€</strong></p>
+        <div>
           <span class="fa fa-star checked"></span>
           <span class="fa fa-star checked"></span>
           <span class="fa fa-star checked"></span>
@@ -210,25 +202,22 @@
         </figure>
     </article>
     <div class="break"></div>
-    <h4 class="hebergementGaucheHeaderTitre">Afficher Plus</h4>     
+    <h4 class="housing-header-title">Afficher Plus</h4>     
 </div> 
-
-
-<div class="hebergementPopulaire">
+<div class="popular-housing">
     <div>
-     <h2>Hébergement Populaire</h2>
-     <img class="iconesvg" src="../JonathanRanchin_2_11012021/images/Logos/chart-line-solid.svg" alt="Chart line logo">
+     <h2 class="popular-housing-title">Hébergement Populaire</h2>
+     <img class="svg-icone" src="images/Logos/chart-line-solid.svg" alt="Chart line logo">
     </div>
-    <figure class="partieCentreEtGaucheFigure">
-        <img class="partiehebergementPopulaireFigureimg"
+    <figure class="center-and-left-figure">
+        <img class="popular-housing-image"
              src="images/Hébergements/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg"
-             alt="photo d'hébergement 1" 
-             >
-               <figcaption class="partieCentreEtGaucheFigureCaption"> 
-                 <h4 class="partieCentreEtGaucheFigureCaptionTitre">Hotel Le Soleil du Matin</h4>
+             alt="photo d'hebergement 1">
+               <figcaption> 
+                 <h4>Hotel Le Soleil du Matin</h4>
                 </figcaption>
-        <p class="partieCentreEtGaucheFigureDescrption">Nuit à partir de <strong class= "partieCentreEtGaucheFigureDescrptionPrix">128€</strong></p>
-      <div class="partieCentreEtGaucheNote">
+        <p>Nuit à partir de <strong>128€</strong></p>
+      <div>
         <span class="fa fa-star checked"></span>
         <span class="fa fa-star checked"></span>
         <span class="fa fa-star checked"></span>
@@ -236,15 +225,15 @@
         <span class="fa fa-star checked"></span>
       </div>
     </figure>    
-    <figure class="partieCentreEtGaucheFigure">
-      <img class="partiehebergementPopulaireFigureimg"
-      src="../JonathanRanchin_2_11012021/images/Hébergements/aw-creative-VGs8z60yT2c-unsplash.jpg"
-      alt="photo d'hébergement 1">
-      <figcaption class="partieCentreEtGaucheFigureCaption"> 
-       <h4 class="partieCentreEtGaucheFigureCaptionTitre">Au Coeur de l'Eau Chambres d'Hôtes</h4>
+    <figure class="center-and-left-figure">
+      <img class="popular-housing-image"
+      src="images/Hébergements/aw-creative-VGs8z60yT2c-unsplash.jpg"
+      alt="photo d'hebergement 1">
+      <figcaption> 
+       <h4>Au Coeur de l'Eau Chambres d'Hôtes</h4>
       </figcaption>
-      <p class="partieCentreEtGaucheFigureDescrption">Nuit à partir de <strong class= "partieCentreEtGaucheFigureDescrptionPrix">68€</strong></p>
-      <div class="partieCentreEtGaucheNote">
+      <p>Nuit à partir de <strong>68€</strong></p>
+      <div>
        <span class="fa fa-star checked"></span>
        <span class="fa fa-star checked"></span>
        <span class="fa fa-star checked"></span>
@@ -252,15 +241,15 @@
        <span class="fa fa-star"></span>
       </div>
     </figure> 
-    <figure class="partieCentreEtGaucheFigure">
-      <img class="partiehebergementPopulaireFigureimg"
-      src="../JonathanRanchin_2_11012021/images/Hébergements/febrian-zakaria-sjvU0THccQA-unsplash.jpg"
-      alt="photo d'hébergement 1">
-      <figcaption class="partieCentreEtGaucheFigureCaption"> 
-        <h4 class="partieCentreEtGaucheFigureCaptionTitre">Hotel Tout Bleu et Blanc</h4>
+    <figure class="center-and-left-figure">
+      <img class="popular-housing-image"
+      src="images/Hébergements/febrian-zakaria-sjvU0THccQA-unsplash.jpg"
+      alt="photo d'hebergement 1">
+      <figcaption> 
+        <h4>Hotel Tout Bleu et Blanc</h4>
       </figcaption>
-      <p class="partieCentreEtGaucheFigureDescrption">Nuit à partir de <strong class= "partieCentreEtGaucheFigureDescrptionPrix">68€</strong></p>
-      <div class="partieCentreEtGaucheNote">
+      <p>Nuit à partir de <strong>68€</strong></p>
+      <div>
         <span class="fa fa-star checked"></span>
         <span class="fa fa-star checked"></span>
         <span class="fa fa-star checked"></span>
@@ -270,65 +259,60 @@
     </figure> 
 </div>
 </div>
-
-<div class="activitésContainerOverall"><h2 class="ActiviésTitre" id="ActiviésTitre">Activités à Marseille</h2>
-  <div class="activitésContainerFlex">
-    <figure class="itemlong"> 
-      <img class="activityImg" src="../JonathanRanchin_2_11012021/images/Activités/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" alt="Image du Vieux Port">
-    <figcaption><h4 class="activitésFigureImgCaption">Le Vieux Port</h4></figcaption>
+<div><h2 id="activity-title">Activités à Marseille</h2>
+  <div id="activity-container">
+    <figure class="item-long"> 
+      <img class="activity-img" src="images/Activités/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" alt="Image du Vieux Port">
+    <figcaption><h4 class="activity-figure-caption">Le Vieux Port</h4></figcaption>
     </figure>
-    <figure class="itemmiddle"> 
-      <img class="activityImg" src="../JonathanRanchin_2_11012021/images/Activités/paul-hermann-QFTrLdQIRhI-unsplash.jpg" alt="Image du Fort de Pomèguès">
-    <figcaption><h4 class="activitésFigureImgCaption">Le Fort de Pomègues</h4></figcaption>
+    <figure class="item-middle"> 
+      <img class="activity-img" src="images/Activités/paul-hermann-QFTrLdQIRhI-unsplash.jpg" alt="Image du Fort de Pomegues">
+    <figcaption><h4 class="activity-figure-caption">Le Fort de Pomegues</h4></figcaption>
     </figure>
-    <figure class="itemsmall"> 
-      <img class="activityImg" src="../JonathanRanchin_2_11012021/images/Activités/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg" alt="Image de l'Île du Frioul">
-    <figcaption><h4 class="activitésFigureImgCaption">L'Île du Frioul</h4></figcaption>
+    <figure class="item-small"> 
+      <img class="activity-img" src="images/Activités/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg" alt="Image de l'Île du Frioul">
+    <figcaption><h4 class="activity-figure-caption">L'Île du Frioul</h4></figcaption>
     </figure>
-    <figure class="itemlong"> 
-      <img class="activityImg" src="../JonathanRanchin_2_11012021/images/Activités/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg" alt="Image du Parc National des Calanques">
-    <figcaption><h4 class="activitésFigureImgCaption">Le Parc National des Calanques</h4></figcaption>
+    <figure class="item-long"> 
+      <img class="activity-img" src="images/Activités/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg" alt="Image du Parc National des Calanques">
+    <figcaption><h4 class="activity-figure-caption">Le Parc National des Calanques</h4></figcaption>
     </figure>
-    <figure class="itemmiddle"> 
-      <img class="activityImg" src="../JonathanRanchin_2_11012021/images/Activités/florian-wehde-xW9e8gdotxI-unsplash.jpg" alt="Image de Notre Dame de la Guarde">
-    <figcaption class="activitésFigureImgCaption"><h4>Notre Dame de la Guarde</h4></figcaption>
+    <figure class="item-middle"> 
+      <img class="activity-img" src="images/Activités/florian-wehde-xW9e8gdotxI-unsplash.jpg" alt="Image de Notre Dame de la Guarde">
+    <figcaption class="activity-figure-caption"><h4>Notre Dame de la Guarde</h4></figcaption>
     </figure>
-    <figure class="itemsmall"> 
-      <img class="activityImg" src="../JonathanRanchin_2_11012021/images/Activités/lena-paulin-wH2-EJoDcV0-unsplash.jpg" alt="Image du Parc Longchamps">
-    <figcaption><h4 class="activitésFigureImgCaption">Le Parc Longchamps</h4></figcaption>
+    <figure class="item-small"> 
+      <img class="activity-img" src="images/Activités/lena-paulin-wH2-EJoDcV0-unsplash.jpg" alt="Image du Parc Longchamps">
+    <figcaption><h4 class="activity-figure-caption">Le Parc Longchamps</h4></figcaption>
     </figure>  
 </div>
 </div>
-
 </body>
-
-<footer><div class="mainDIV">
+<footer><div class="main-div">
     <div class="leftDIV"><ul style="list-style-type:none"></u>  
-  <li><h4>A Propos</h4></li>
-  <li>Fonctionnement du Site</li>
+  <li class="footer-writing"><h4>A Propos</h4></li>
+  <li class="footer-writing">Fonctionnement du Site</li>
       <p></p>
-  <li>Conditions Générales de Vente</li>
+  <li class="footer-writing">Conditions Générales de Vente</li>
       <p></p>
-  <li>Données et Confidentialité</li>
+  <li class="footer-writing">Données et Confidentialité</li>
 </ul></div>
     <div class="middleDIV"><ul style="list-style-type:none">
     <p></p>
     </u>  
-      <li><h4>Nos Hébergements</h4></li>
+      <li><h4 class="footer-writing">Nos Hébergements</h4></li>
       <p></p>
-  <li>Chartes de Qualité</li>
+  <li class="footer-writing">Chartes de Qualité</li>
       <p></p>
-  <li>Soumettre Votre Hotel</li>
+  <li class="footer-writing">Soumettre Votre Hotel</li>
 </ul></div>
     <div class="rightDIV"><ul style="list-style-type:none"></u>  
-  <li><h4>Assistance</h4></li>
+  <li><h4 class="footer-writing">Assistance</h4></li>
       <p></p>
-  <li>Centre d'Aide</li>
+  <li class="footer-writing">Centre d'Aide</li>
       <p></p>
-  <li>Nous Contacter</li>
+  <li class="footer-writing">Nous Contacter</li>
 </ul></div>
 </div></footer>
-
-
 </main>
 </html>
