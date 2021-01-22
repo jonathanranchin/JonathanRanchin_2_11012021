@@ -38,6 +38,11 @@ body {
   }
 a, u {
   text-decoration: none;
+  color: black;
+}
+a:visited {
+  text-decoration: none; 
+  color: black;
 }
 #sous-titre-général {
   color: grey;
@@ -46,7 +51,6 @@ a, u {
     width:100%;
     display: flex;
     flex-direction: column;
-
   }
 .search-form {
   display: flex;
@@ -156,6 +160,7 @@ a, u {
   }
 #left-housing {
   display: flex;
+  order:1;
   align-items: auto;
   flex-wrap: wrap;
   justify-content: flex-start;
@@ -210,6 +215,7 @@ a, u {
   }
 .popular-housing {
   position: flex;
+  order: 2;
   flex-direction: row;
   top: 20px;
   float: right;
@@ -219,8 +225,7 @@ a, u {
   border-radius: 25px;
   min-width: 30%;  
   max-width: 30%;
-
-   }
+  }
 .popular-housing-title:hover {
   transform: scale(1.01);   
   cursor: pointer; 
@@ -228,7 +233,6 @@ a, u {
 .popular-housing-image {   
   width: 210px;
   height: 140px;
-  
   object-fit: fill;
   border-radius: 15px 0 0 15px;
   float: left;
@@ -280,7 +284,6 @@ a, u {
   font-weight: bold;
   border: rgb(242,242,242) solid 2px;
   }
-
 .item-long {
   background-color: white;
   border: solid #F2F2F2;
@@ -343,3 +346,65 @@ a, u {
   transform: scale(1.01);   
   cursor: pointer; 
     }
+@media screen and (max-width: 601px) {
+  main {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+  #left-popular-flex-container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+  #left-housing {
+    order: 2;
+    display: flex;
+    flex-direction: column;
+    min-width: 100%;
+  }
+  .popular-housing {
+    order: 1;
+    min-width: 100%;
+  }
+  .center-and-left-figure {
+    min-width: 90%;
+    min-height: 160px;
+  }
+  .center-and-left-figure-img {
+    min-width: 100%;
+    min-height: 160px;
+  }
+  #activity-container {
+    display: flex;
+    flex-direction: column;
+    min-width: 100%;
+    height: 1800px;
+  }
+  .item-long, .item-middle, .item-small {
+   order:2;
+   background-color: white; 
+   border-radius: 25px;
+   padding: 13px;
+   margin: 5px;
+   box-shadow: 0 0 20px #0000002e;
+   cursor: pointer;  
+   min-width: 90%;
+   max-height: 250px;
+   } 
+ .activity-img {   
+   width:92%;
+   height: 80%;
+   max-width: 100%;
+   max-height: 80%;
+   object-fit: fill;
+   border-radius: 15px 15px 0 0;
+  }
+  .main-div {
+    display: flex;
+    flex-direction: column;
+    justify-content:space-around;
+    max-width: 100%;
+    background-color: rgb(242,242,242);
+    } 
+}
