@@ -36,6 +36,9 @@ body {
   float:left;
   padding: 0px;
   }
+h1{
+  margin-top: 0px;
+}
 a, u {
   text-decoration: none;
   color: black;
@@ -48,21 +51,24 @@ a:visited {
   color: grey;
   }
 .search-tool {
-    width:100%;
-    display: flex;
-    flex-direction: column;
+  width:100%;
+  display: flex;
+  flex-direction: column;  
   }
+#search-tool-form, #search-tool-figure{
+  margin: 0px;
+}
 .search-form {
   display: flex;
   flex-direction: row;
-  align-items: flex-start;
+  margin: -3px;
   }
 .logo-holder-research-bar {
   display: flex;
   border-color: rgb(222, 235, 255);
   padding: 4px;
   border-radius: 15px 15px 15px 15px;   
-  margin: -3px;  
+  margin: 0px;
   }
 #map-marker {
   color: black;
@@ -81,7 +87,7 @@ a:visited {
   justify-content:flex-start;
   align-content: flex-start;
   align-items: center;
-  margin: 0px;
+  margin: 20px 20px 0px 0px;
   }
 .search-filter-figure {
   background-color: white; 
@@ -114,6 +120,33 @@ a:visited {
   border-radius: 100px;   
   margin: -3px;
   }
+#icone-filtre {
+  color:blue;
+  border: blue 20px;
+  }
+#search-button {
+  background-color: #0065FC;
+  color: white;
+  font-weight: bold;
+  border: none;
+  border-radius: 0 1rem 1rem 0;
+  padding: 0 1.5rem;
+  font-family: "Raleway", "Sans serif";
+  font-size: 1rem;
+  cursor: pointer;
+  }
+.site-search {
+  border-right: none;
+  border-left: none;
+  border-top: rgb(222, 235, 255);
+  border-bottom: rgb(222, 235, 255);
+  padding: 0 1.5rem;
+  box-sizing: border-box;
+  width: 15rem;
+  font-size: 1.23rem;
+  font-weight: bold;
+  border: rgb(242,242,242) solid 2px;
+  }
 .svg-icone {   
   height: 20px;
   background-color: rgb(222, 235, 255);
@@ -125,8 +158,9 @@ a:visited {
   display: flex;
   flex-direction: row;
   align-items: center;
+  margin: 20px 20px 20px 0px;
 }
-.fa-info{
+.fa-info {
   color: blue;
 }
 #number-of-results-figure {  
@@ -137,9 +171,10 @@ a:visited {
   border: solid 1px grey;
   border-radius: 100%;
   display: flex;
+  flex-direction: row;
   align-items: center;
   justify-content: center;
-  margin-right: 1rem;
+  margin: 0px 0px 0px 0px;
 }
 #number-of-results-icone {
   width: 20px;
@@ -166,6 +201,7 @@ a:visited {
   justify-content: flex-start;
   background-color: rgb(242,242,242);
   border-radius: 25px;
+  border: 2px transparent;
   width: fit-content ;
   max-width: 70%;
   margin: 2px;
@@ -220,7 +256,7 @@ a:visited {
   top: 20px;
   float: right;
   background-color: rgb(242,242,242);
-  border: 1px transparent;
+  border: 4px transparent;
   padding: 5px;
   border-radius: 25px;
   min-width: 30%;  
@@ -256,33 +292,6 @@ a:visited {
   justify-content:space-around;
   max-width: 100%;
   background-color: rgb(242,242,242);
-  }
-#icone-filtre {
-  color:blue;
-  border: blue 20px;
-}
-#search-button {
-  background-color: #0065FC;
-  color: white;
-  font-weight: bold;
-  border: none;
-  border-radius: 0 1rem 1rem 0;
-  padding: 0 1.5rem;
-  font-family: "Raleway", "Sans serif";
-  font-size: 1rem;
-  cursor: pointer;
-  }
-.site-search {
-  border-right: none;
-  border-left: none;
-  border-top: rgb(222, 235, 255);
-  border-bottom: rgb(222, 235, 255);
-  padding: 0 1.5rem;
-  box-sizing: border-box;
-  width: 15rem;
-  font-size: 1.23rem;
-  font-weight: bold;
-  border: rgb(242,242,242) solid 2px;
   }
 .item-long {
   background-color: white;
