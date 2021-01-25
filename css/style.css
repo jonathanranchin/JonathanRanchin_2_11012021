@@ -5,29 +5,26 @@
   font-weight: 400;
   src: url(https://fonts.gstatic.com/s/raleway/v18/1Ptxg8zYS_SKggPN4iEgvnHyvveLxVvaorCIPrE.woff2) format('woff2');
 }
-.general-header {
+#nav-bar {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
   width:100%;
-  }
-#left-header-element {
-  float:left;
-  margin: 15px;
-  }
-#right-header-element {
-  float:right; 
-  margin: 15px;
-  }
+  margin: 10px 0px 12px 12px;
+}
 .nav-bar-right-header {
   margin-left: 10px;
   margin-right: 10px;
-  padding-top: 36px;
+  padding-top: 31px;
   color: black;
   border-top: 3px transparent solid;
   border-bottom: 3px transparent solid;
   font-weight: bold;
   }
 .nav-bar-right-header:hover { 
-  border-top: 3px blue solid;
-  color: blue;
+  border-top: 3px rgb(0, 101, 252) solid;
+  color: rgb(0, 101, 252);
   }
 main {
   font-family: Raleway, serif;
@@ -36,7 +33,7 @@ body {
   float:left;
   padding: 0px;
   }
-h1{
+h1 {
   margin-top: 0px;
 }
 a, u {
@@ -47,6 +44,12 @@ a:visited {
   text-decoration: none; 
   color: black;
 }
+p {
+  margin: 6px 12px 6px 0px;
+}
+h3 {
+  margin: 2px 2px 2px 2px;
+}
 #sous-titre-général {
   color: grey;
   }
@@ -55,7 +58,7 @@ a:visited {
   display: flex;
   flex-direction: column;  
   }
-#search-tool-form, #search-tool-figure{
+#search-tool-form, #search-tool-figure {
   margin: 0px;
 }
 .search-form {
@@ -121,8 +124,8 @@ a:visited {
   margin: -3px;
   }
 #icone-filtre {
-  color:blue;
-  border: blue 20px;
+  color:rgb(0, 101, 252);
+  border: rgb(0, 101, 252) 20px;
   }
 #search-button {
   background-color: #0065FC;
@@ -131,7 +134,6 @@ a:visited {
   border: none;
   border-radius: 0 1rem 1rem 0;
   padding: 0 1.5rem;
-  font-family: "Raleway", "Sans serif";
   font-size: 1rem;
   cursor: pointer;
   }
@@ -154,14 +156,14 @@ a:visited {
   border-width: 2px ;
   margin: 0 px;
   }
-.number-of-results{
+.number-of-results {
   display: flex;
   flex-direction: row;
   align-items: center;
   margin: 20px 20px 20px 0px;
 }
 .fa-info {
-  color: blue;
+  color: rgb(0, 101, 252);
 }
 #number-of-results-figure {  
   height: 2rem;
@@ -187,31 +189,28 @@ a:visited {
 #number-of-results-text {
   margin: 10px;
   }
-#left-popular-flex-container {
+#housing-section {
   width: 100%;
   min-height: 300px;
   margin: 0 auto;    
   display: flex; 
   }
-#left-housing {
+#housing-main {
   display: flex;
   order:1;
-  align-items: auto;
+  flex-direction: row;
   flex-wrap: wrap;
-  justify-content: flex-start;
   background-color: rgb(242,242,242);
   border-radius: 25px;
-  border: 2px transparent;
-  width: fit-content ;
-  max-width: 70%;
+  border: 4px transparent;
+  max-width: 74%;
   margin: 2px;
   }
 .housing-header-title {
-  align-items: left;
-  display: flex;
-  order: 1;
-  height: 0;
+  align-items: right;
+  width: 100%;
   padding: 10px;
+  margin: 6px 6px 6px 6px;
   }
 .housing-header-title:hover {
   transform: scale(1.01);   
@@ -219,42 +218,40 @@ a:visited {
   }
 .break {
   flex-basis: 100%;
-  height: 0;
-  width: 100%;
+  height: 0px;
   padding: 0px;
   }
-.center-and-left-figure {
-  order:2;
+.main-housing-article {
+  display: flex;
+  order:0;
   background-color: white; 
   border-radius: 25px;
-  padding: 13px;
-  margin: 8px;
+  padding: 4px;
+  margin: 12px;
+  border: white 1px solid;
   box-shadow: 0 0 20px #0000002e;
   cursor: pointer;
   }
-.center-and-left-figure:hover {
+.main-housing-article :hover {
   transform: scale(1.01); 
 }
-.center-and-left-figure-img {   
-  min-width:  240px;
-  max-width: 100%;
-  max-height: 100%;
-  height: 126px;
+.main-housing-article  img {   
+  width: 250px;
+  height: 140px;
   object-fit: fill;
-  border-radius: 15px 15px 0 0;
+  border-radius: 25px 25px 0 0;
   }
 .fa-star {
   color: grey;
   }
 .checked {
-  color: blue;
+  color: rgb(0, 101, 252);
   }
 .popular-housing {
   position: flex;
   order: 2;
-  flex-direction: row;
+  flex-direction: column;
   top: 20px;
-  float: right;
   background-color: rgb(242,242,242);
   border: 4px transparent;
   padding: 5px;
@@ -262,17 +259,44 @@ a:visited {
   min-width: 30%;  
   max-width: 30%;
   }
+.popular-housing-article  {
+  display: flex;
+  order:0;
+  background-color: white; 
+  border-radius: 25px;
+  padding: 3px;
+  margin: 6px;
+  border: white 1px solid;
+  box-shadow: 0 0 20px #0000002e;
+  cursor: pointer;
+  }
+.popular-housing-title {
+  margin: 18px 0px 6px 6px;
+}
 .popular-housing-title:hover {
   transform: scale(1.01);   
   cursor: pointer; 
     }   
-.popular-housing-image {   
-  width: 210px;
-  height: 140px;
+.popular-housing img {   
+  order: 1;
+  max-width: 160px;
+  min-height: 200px;
+  max-height: 200px;
   object-fit: fill;
-  border-radius: 15px 0 0 15px;
+  border-radius: 25px 0 0 25px;
   float: left;
+  margin: 0 9 0 0px;
   }
+.popular-housing a {
+  min-width: 100%;
+ }
+.popular-housing-text-rating {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: space-between;
+  height: 100%;
+  order: 2;
+}
 #activity-container {
   display: flex; 
   flex-flow: column wrap;
@@ -351,7 +375,7 @@ a:visited {
   object-fit: fill;
   border-radius: 15px 15px 0 0;
   }
-.footer-writing:hover{
+.footer-writing:hover {
   transform: scale(1.01);   
   cursor: pointer; 
     }
@@ -361,27 +385,29 @@ a:visited {
     flex-direction: column;
     flex-wrap: wrap;
   }
-  #left-popular-flex-container {
+  #housing-section {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
   }
-  #left-housing {
+  #housing-main {
     order: 2;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    flex-wrap: wrap;
     min-width: 100%;
   }
   .popular-housing {
     order: 1;
     min-width: 100%;
   }
-  .center-and-left-figure {
+  .center-and-left-figure img {
+    display:inherit;
     min-width: 90%;
     min-height: 160px;
   }
-  .center-and-left-figure-img {
-    min-width: 100%;
+  .center-and-left img {
+    min-width: 240px;
     min-height: 160px;
   }
   #activity-container {
