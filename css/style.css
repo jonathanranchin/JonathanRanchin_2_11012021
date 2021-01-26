@@ -4,28 +4,40 @@
   font-style: normal;
   font-weight: 400;
   src: url(https://fonts.gstatic.com/s/raleway/v18/1Ptxg8zYS_SKggPN4iEgvnHyvveLxVvaorCIPrE.woff2) format('woff2');
-}
+  }
+html {
+  line-height: 1.15;
+  }
 #nav-bar {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-between;
-  width:100%;
+  width:99%;
   margin: 10px 0px 12px 12px;
-}
+  }
 .nav-bar-right-header {
   margin-left: 10px;
   margin-right: 10px;
-  padding-top: 31px;
-  color: black;
-  border-top: 3px transparent solid;
+  padding: 31px;
+  border-top: 4px transparent solid;
   border-bottom: 3px transparent solid;
   font-weight: bold;
   }
 .nav-bar-right-header:hover { 
-  border-top: 3px rgb(0, 101, 252) solid;
+  border-top: 4px rgb(0, 101, 252) solid;
+  padding: 31px;
+  margin: 0 -1em;
   color: rgb(0, 101, 252);
   }
+#active {
+  border-top: 4px rgb(0, 101, 252) solid;
+  margin: 0 -1em;
+  color: rgb(0, 101, 252);
+  }
+#subscribe{
+  color: rgb(0, 101, 252);
+}
 main {
   font-family: Raleway, serif;
   }
@@ -52,6 +64,7 @@ h3 {
 }
 #sous-titre-général {
   color: grey;
+  margin: -20 0 12px 0; 
   }
 .search-tool {
   width:100%;
@@ -210,7 +223,7 @@ h3 {
   align-items: right;
   width: 100%;
   padding: 10px;
-  margin: 6px 6px 6px 6px;
+  margin: 5%;
   }
 .housing-header-title:hover {
   transform: scale(1.01);   
@@ -227,7 +240,7 @@ h3 {
   background-color: white; 
   border-radius: 25px;
   padding: 4px;
-  margin: 12px;
+  margin: 1%;
   border: white 1px solid;
   box-shadow: 0 0 20px #0000002e;
   cursor: pointer;
@@ -255,6 +268,7 @@ h3 {
   background-color: rgb(242,242,242);
   border: 4px transparent;
   padding: 5px;
+  margin: 3px;
   border-radius: 25px;
   min-width: 30%;  
   max-width: 30%;
@@ -262,16 +276,20 @@ h3 {
 .popular-housing-article  {
   display: flex;
   order:0;
-  background-color: white; 
+  background-color: white;
+  max-width: 90%; 
   border-radius: 25px;
   padding: 3px;
-  margin: 6px;
+  margin: 5%;
   border: white 1px solid;
   box-shadow: 0 0 20px #0000002e;
   cursor: pointer;
   }
+.popular-housing-article  :hover {
+  transform: scale(1.01); 
+  }
 .popular-housing-title {
-  margin: 18px 0px 6px 6px;
+  margin: 5%;
 }
 .popular-housing-title:hover {
   transform: scale(1.01);   
@@ -280,8 +298,8 @@ h3 {
 .popular-housing img {   
   order: 1;
   max-width: 160px;
-  min-height: 200px;
-  max-height: 200px;
+  min-height: 190px;
+  max-height: 190px;
   object-fit: fill;
   border-radius: 25px 0 0 25px;
   float: left;
@@ -385,6 +403,9 @@ h3 {
     flex-direction: column;
     flex-wrap: wrap;
   }
+  .filter-holder{
+    margin: 2%;
+  }
   #housing-section {
     display: flex;
     flex-direction: column;
@@ -401,14 +422,20 @@ h3 {
     order: 1;
     min-width: 100%;
   }
-  .center-and-left-figure img {
+  .popular-housing-article img {
+    min-width: 50%;
+  }
+  .main-housing-article img {
     display:inherit;
     min-width: 90%;
     min-height: 160px;
   }
-  .center-and-left img {
-    min-width: 240px;
-    min-height: 160px;
+  .main-housing-article a {
+    padding: 10px;
+  }
+  .main-housing-article img {
+    width: 100%;
+    min-height: 180px;
   }
   #activity-container {
     display: flex;
