@@ -62,6 +62,12 @@ p {
 h3 {
   margin: 2px 2px 2px 2px;
 }
+ul {
+  list-style-type: none;
+}
+li {
+  display: inline-block;
+}
 #sous-titre-général {
   color: grey;
   margin: -20px 0px 12px 0px; 
@@ -102,7 +108,7 @@ h3 {
   flex-wrap: wrap;
   justify-content:flex-start;
   align-content: flex-start;
-  align-items: center;
+  align-items: baseline;
   margin: 20px 20px 0px 0px;
   }
 .search-filter-figure {
@@ -128,7 +134,7 @@ h3 {
   }
 .logo-holder {
   display:flex;
-  align-items: center;
+  align-items: baseline;
   border: solid 18px;
   border-color: rgb(222, 235, 255);
   background-color: rgb(222, 235, 255);
@@ -136,8 +142,11 @@ h3 {
   margin: -3px;
   }
 #icone-filtre {
-  color:rgb(0, 101, 252);
-  border: rgb(0, 101, 252) 20px;
+  height: 20px;
+  background-color: rgb(222, 235, 255);
+  border: grey;
+  border-width: 2px ;
+  margin: 0px;
   }
 #search-button {
   background-color: #0065FC;
@@ -161,12 +170,15 @@ h3 {
   font-weight: bold;
   border: rgb(242,242,242) solid 2px;
   }
-.svg-icone {   
-  height: 20px;
+#svg-icon {   
+  width: 100%;
+  height: 100%;
   background-color: rgb(222, 235, 255);
   border: grey;
-  border-width: 2px ;
+  border-width: 2px;
   margin: 0px;
+  color:rgb(0, 101, 252);
+  border: rgb(0, 101, 252) 20px;
   }
 .number-of-results {
   display: flex;
@@ -376,6 +388,9 @@ h3 {
   }
 .item-long img {
   min-height: 87%;
+}
+.item-small img {
+  max-height: 75%;
 }
 .main-div {
   display: flex;
