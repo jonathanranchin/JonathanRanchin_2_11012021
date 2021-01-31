@@ -1,31 +1,23 @@
 <!DOCTYPE html>
 <html lang="fr">
-<main>
   <head>
     <title>Reservia Page de Recherche</title>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <link href="src:url(https://fonts.gstatic.com/s/raleway/v18/1Ptxg8zYS_SKggPN4iEgvnHyvveLxVvaorCIPrE.woff2)format('woff2')" rel="stylesheet"/>
     <script src="https://kit.fontawesome.com/3a103fa7d9.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="css/style.css" /> 
+    <link rel="stylesheet" href="css/style.css"/> 
   </head>
+  <body>
   <header id="header" class="general-header"> 
-    <div id="nav-bar">
-     <div id="left-header-element">
-      <img class="header-image" src="images/Logos/Reservia.svg" alt= "Placeholder du logo" >
-     </div>
-     <div id="right-header-element">
-      <nav>
-        <ul>
-          <li><a class="nav-bar-right-header" href="#housing-header-title" id="active">Hébergements</a></li>
-          <li><a class="nav-bar-right-header" href="#activity-title">Activités</a></li>
-          <li><a class="nav-bar-right-header" href="#" id="subscribe">S'inscrire</a></li>
-        </ul>
+      <img id="left-header-element" class="header-image" src="images/Logos/Reservia.svg" alt= "Placeholder du logo">
+      <nav id="flex-right-nav">
+        <div id="first"><a class="nav-bar-right-header" href="#housing-header-title" id="active">Hébergements</a></div>
+        <div id="second"><a class="nav-bar-right-header" href="#activity-title" id="nav-activity-title">Activités</a></div>
       </nav>
-     </div>
-   </div>
+      <a href="#" id="subscribe">S'inscrire</a>
   </header>  
-<body>
+<main>
   <div class="search-tool"> 
     <header>
       <h1>Trouver votre hébergement pour des vacances de rêve</h1>
@@ -37,7 +29,7 @@
           <figure class="logo-holder-research-bar"> <i class="fas fa-map-marker-alt" id="map-marker"></i>
             <input type="search" class="site-search" placeholder="Marseille, France" name="q" aria-label="Search through site content">     
               <button id="search-button">
-                <p class="search-bar-filter"><strong>Rechercher</strong></p>
+                <strong class="search-bar-filter">Rechercher</strong>
               </button>
           </figure> 
         </div>
@@ -51,7 +43,7 @@
       <figure class="search-filter-figure" >
        <div class="filter-holder" >
          <figure class="logo-holder">  
-            <i class="fas fa-money-bill-wave" id="svg-icon"></i>
+            <i class="fas fa-money-bill-wave svg-icon"></i>
           </figure>        
           <p class="search-bar-filter"><strong>Économique</strong></p>
        </div>
@@ -61,7 +53,7 @@
       <figure class="search-filter-figure">
         <div class="filter-holder" >
           <figure class="logo-holder">    
-            <i class="fas fa-child" id="svg-icon"></i>
+            <i class="fas fa-child svg-icon"></i>
           </figure>
            <p class="search-bar-filter"><strong>Familial</strong></p>
         </div>
@@ -71,7 +63,7 @@
       <figure class="search-filter-figure">
         <div class="filter-holder" >
           <figure class="logo-holder">
-            <i class="fas fa-heart" id="svg-icon"></i>
+            <i class="fas fa-heart svg-icon"></i>
           </figure>
            <p class="search-bar-filter"><strong>Romantique</strong></p>
         </div>
@@ -81,7 +73,7 @@
       <figure class="search-filter-figure">
         <div class="filter-holder" >
           <figure class="logo-holder">    
-            <i class="fas fa-dog" id="svg-icon"></i>
+            <i class="fas fa-dog svg-icon"></i>
           </figure>
           <p class="search-bar-filter"><strong>Animaux Autorisés</strong></p>
         </div>
@@ -185,9 +177,7 @@
         </div>
       </a>
     </article>
-    <footer>
-      <h3 class="housing-header-title">Afficher Plus</h3>
-    </footer>     
+      <h3 class="housing-header-title">Afficher Plus</h3>  
    </section>
    <aside class="popular-housing">
     <div>
@@ -290,12 +280,12 @@
     </figure>  
 </div>
 </div>
-</body>
+</main>
 <footer>
   <div class="main-div">
     <div class="left-div">
       <ul style="list-style-type:none">
-        <li><h4 class="footer-writing"><a href="#">A Propos</a></h4></li><li></li>
+        <li class="break"><h4 class="footer-writing"><a href="#">A Propos</a></h4></li>
         <li class="footer-writing"><a href="#">Fonctionnement du Site</a></li>
         <li class="footer-writing"><a href="#">Conditions Générales de Vente</a></li>
         <li class="footer-writing"><a href="#">Données et Confidentialité</a></li>
@@ -303,19 +293,19 @@
     </div>
     <div class="middleDIV">
       <ul style="list-style-type:none"> 
-        <li><h4 class="footer-writing"><a href="#">Nos Hébergements</a></h4></li>
+        <li class="break"><h4 class="footer-writing"><a href="#">Nos Hébergements</a></h4></li>
         <li class="footer-writing"><a href="#">Chartes de Qualité</a></li>
         <li class="footer-writing"><a href="#">Soumettre Votre Hotel</a></li>
       </ul>
     </div>
     <div class="right-div">
       <ul style="list-style-type:none">
-        <li><h4 class="footer-writing"><a href="#">Assistance</a></h4></li>
+        <li class="break"><h4 class="footer-writing"><a href="#">Assistance</a></h4></li>
         <li class="footer-writing"><a href="#">Centre d'Aide</a></li>
         <li class="footer-writing"><a href="#">Nous Contacter</a></li>
       </ul>
     </div>
 </div>
 </footer>
-</main>
+</body>
 </html>
