@@ -69,7 +69,8 @@ h1 {
   font-size: 1.8rem;
   margin-top: 0px;
 }
-a, u {
+a, 
+u {
   text-decoration: none;
   color: black;
 }
@@ -110,7 +111,8 @@ li {
   display: flex;
   flex-direction: column;  
 }
-#search-tool-form, #search-tool-figure {
+#search-tool-form, 
+#search-tool-figure {
   margin: 0px;
 }
 .search-form {
@@ -281,7 +283,7 @@ li {
   box-shadow: 0 0 20px #0000002e;
   cursor: pointer;
 }
-.main-housing-article :hover {
+.main-housing-article:hover {
   transform: scale(1.01); 
 }
 .main-housing-article img {   
@@ -321,7 +323,7 @@ li {
   box-shadow: 0 0 20px #0000002e;
   cursor: pointer;
 }
-.popular-housing-article  :hover {
+.popular-housing-article:hover {
   transform: scale(1.01); 
 }
 .popular-housing-title:hover {   
@@ -365,7 +367,7 @@ li {
   height: 550px;
   justify-content: space-evenly;
 }    
-#activity-title{
+#activity-title {
   margin: 3% 0px -10px 3%;
 }
 #activity-container h3 {
@@ -404,8 +406,8 @@ li {
   cursor: pointer;
   border-radius: 15px;
 }
-.item-long:hover
-.item-middle:hover
+.item-long:hover,
+.item-middle:hover,
 .item-small:hover  {
   transform: scale(1.01);
 }
@@ -489,11 +491,9 @@ li {
   .item-middle, 
   .item-small {
    order:2;
-   background-color: white; 
    border-radius: 25px;
    padding: 5px;
    margin: 5px;
-   box-shadow: 0 0 20px #0000002e;
    cursor: pointer;  
    min-width: 45%;
    max-height: 250px;
@@ -520,7 +520,6 @@ li {
     margin-bottom: 10px;
   }
   #header img {
-    order: 0;
     margin-right: 0;
     flex-basis: 23%;
   }
@@ -622,37 +621,31 @@ li {
   }
 }
 @media screen and (max-width: 481px) {
-  
-#subscribe {
-    order: 0;
+  main{
+    margin: 0px;
+  }
+  #housing-main h3 {
+    margin: 0px;
+  }
+  #subscribe {
     flex-basis: 23%;
   }
-  #flex-right-nav {
+  #flex-right-nav, 
+  #housing-section {
     width: 100%;
-  }
-  main {
-    width:95%;
-    margin: 0px;
   }
   .search-tool{
     margin: 10px 0px 0px 2%;
-  }
-  #housing-section {
-    width: 100%;
   }
   #housing-main {
     background-color: white;
     max-width: 97%;
   }
-  .popular-housing {
-    max-width: 97%;
-  }
   .item-long, 
   .item-middle, 
-  .item-small {
-   min-width: 97%;
+  .item-small,
+  .main-div, 
+  .popular-housing  {
+   width: 97%;
   } 
-  .main-div {
-    max-width: 97%;
-  }
 }
