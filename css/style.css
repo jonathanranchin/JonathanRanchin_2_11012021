@@ -1,3 +1,8 @@
+/* Code description :
+   This CSS follows the order of the HTML
+   Parts : Header, Main sections (3 parts), 
+           Footer, Mobile Breakpoints (3 points)
+*/
 @font-face {
   font-family: 'Raleway';
   font-style: normal;
@@ -8,12 +13,12 @@ html {
   line-height: 1.15;
   font-family: 'Raleway', serif;
 }
+/* Header Css start */
 #header {
   width:95%;
   display: flex;
-  flex-wrap: nowrap;
   align-items: baseline;
-  flex-direction: row;
+  flex-flow: row nowrap;
   justify-content: space-between;
   margin: 0px 12px 0px 12px;
 }
@@ -52,11 +57,12 @@ html {
   order: 1;
   float: left;
   display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
+  flex-flow: row nowrap;
   padding:10px;
   margin: 10px;
 }
+/* Header Css end */
+/* General Css tags start */
 body {
   float:left;
   padding: 0px;
@@ -69,8 +75,7 @@ h1 {
   font-size: 1.8rem;
   margin-top: 0px;
 }
-a, 
-u {
+a {
   text-decoration: none;
   color: black;
 }
@@ -100,16 +105,18 @@ ul {
 li {
   display: inline-block;
 }
-#sous-titre-général {
-  font-family: 'Raleway ExtraLight';
-  color:black;
-  margin: -10px 0px 12px 0px; 
-}
+/* General Css tags end */
+/* Search tool start */
 .search-tool {
   margin-top: 20px;
   width:100%;
   display: flex;
-  flex-direction: column;  
+  flex-direction: column; 
+}
+#sous-titre-général {
+  font-family: 'Raleway ExtraLight';
+  color:black;
+  margin: -10px 0px 12px 0px; 
 }
 #search-tool-form, 
 #search-tool-figure {
@@ -124,7 +131,7 @@ li {
   display: flex;
   border-color: rgb(222, 235, 255);
   padding: 4px;
-  border-radius: 15px 15px 15px 15px;   
+  border-radius: 15px;   
   margin: 0px;
 }
 #map-marker {
@@ -139,8 +146,7 @@ li {
 }
 .research-filter-container {
   display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
+  flex-flow: row wrap;
   justify-content:flex-start;
   align-content: flex-start;
   align-items: baseline;
@@ -158,8 +164,7 @@ li {
 }
 .filter-holder {
   display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
+  flex-flow: row nowrap;
   align-items: center;
   margin:2%;
   padding: 0px 0.5px 0px 0px;
@@ -236,7 +241,7 @@ li {
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  margin: 0px 0px 0px 0px;
+  margin: 0px;
 }
 #number-of-results-icone {
   width: 20px;
@@ -248,6 +253,8 @@ li {
 #number-of-results-text {
   margin: 10px;
 }
+/* Search tool end */
+/* Housing section start */
 #housing-section {
   width: 100%;
   min-height: 300px;    
@@ -258,8 +265,7 @@ li {
 #housing-main {
   display: flex;
   order:1;
-  flex-direction: row;
-  flex-wrap: wrap;
+  flex-flow: row wrap;
   background-color: rgb(242,242,242);
   border-radius: 25px;
   border: 8px transparent;
@@ -361,6 +367,8 @@ li {
   height: 100%;
   order: 2;
 }
+/* Housing section end */
+/* Activity section start */
 #activity-background {
   margin:1%;
   background-color: white;
@@ -429,6 +437,8 @@ li {
 .item-small img {
   max-height: 75%;
 }
+/* Activity section end */
+/* Footer start */
 .main-div {
   display: flex;
   justify-content: flex-start;
@@ -449,6 +459,8 @@ li {
   transform: scale(1.01);   
   cursor: pointer; 
 }
+/* Footer end */
+/* 3 Breakpoints at 768 600 and 480 px */
 @media screen and (max-width: 769px) {
   #housing-section {
     flex-direction: column;
@@ -457,6 +469,10 @@ li {
     order: 1;
     width: 98%;
     justify-content: space-evenly;
+  }
+  .main-housing-article img {   
+    width: 300px; 
+    height: 145px;
   }
   .popular-housing {
     order: 0;
@@ -478,8 +494,7 @@ li {
   }
   #activity-container {
     display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
+    flex-flow: column wrap;
     min-width: 90%;
     height: 1100px;
   }
@@ -489,8 +504,7 @@ li {
   }
   #activity-container {
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+    flex-flow: row wrap;
     min-width: 90%;
     height: 1000px;
   }
@@ -576,23 +590,20 @@ li {
   main {
     margin: 0px;
     display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
+    flex-flow: column wrap;
   }
   .filter-holder{
     margin: 2%;
   }
   #housing-section {
     display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
+    flex-flow: column wrap;
     border-radius: 0px;
   }
   #housing-main {
     order: 2;
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+    flex-flow: row wrap;
     justify-content: left;
     max-width: 90%;
     background-color: white;
