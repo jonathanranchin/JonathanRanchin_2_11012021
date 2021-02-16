@@ -1,6 +1,7 @@
 /* Code description :
    This CSS follows the order of the HTML
-   Parts : Header, Main sections (3 parts), 
+   Parts : Header, Searchbar and Filters,
+           Main sections (3 parts), 
            Footer, Mobile Breakpoints (3 points)
 */
 @font-face {
@@ -643,6 +644,14 @@ li {
   }
 }
 @media screen and (max-width: 481px) {
+  .nav-bar-right-header {
+    margin: 0px;
+    padding: 125px 40% 32px 40%;
+  }
+  .active {
+    margin: -30px;
+    padding: 125px 31% 32px 30%;
+  }
   #subscribe {
     flex-basis: 23%;
   }
