@@ -115,7 +115,7 @@ li {
   flex-direction: column; 
 }
 #sous-titre-général {
-  font-family: 'Raleway ExtraLight';
+  font-weight: 400;
   color:black;
   margin: -10px 0px 12px 0px; 
 }
