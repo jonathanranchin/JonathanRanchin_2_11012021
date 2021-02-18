@@ -391,7 +391,6 @@ li {
   margin: 3% 0px -10px 3%;
 }
 #activity-container h3 {
-  float: center;
   padding: 0px 0px 0px 0px;
   margin: 2%;
   font-weight: bold;
@@ -401,7 +400,7 @@ li {
   border: solid #F2F2F2;
   box-shadow: 0 0 20px #0000002e;
   height: 90%;
-  width: 22%;
+  width: 23%;
   margin: 1%;
   cursor: pointer;
   padding:0px;
@@ -412,7 +411,7 @@ li {
   border: solid #F2F2F2;
   box-shadow: 0 0 20px #0000002e;
   height: 45%;
-  width: 22%;
+  width: 23%;
   margin: 1%;
   cursor: pointer;
   border-radius: 15px;
@@ -422,7 +421,7 @@ li {
   border: solid #F2F2F2;
   box-shadow: 0 0 20px #0000002e;
   height: 35%;
-  width: 22%;
+  width: 23%;
   margin: 1%;
   cursor: pointer;
   border-radius: 15px;
