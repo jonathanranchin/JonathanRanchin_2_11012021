@@ -129,9 +129,7 @@ li {
   margin: -3px;
   font-family: 'Raleway';
 }
-.site-search::-moz-placeholder {
-  font-family: 'Raleway', sans-serif;  
-}
+
 .logo-holder-research-bar {
   display: flex;
   border-color: rgb(222, 235, 255);
@@ -436,6 +434,12 @@ li {
   cursor: pointer;
   border-radius: 15px;
 }
+#item-medium-large {
+  height: 56%;
+}
+#item-smallest {
+  height: 25%;
+}
 .item-long:hover,
 .item-middle:hover,
 .item-small:hover  {
@@ -613,16 +617,16 @@ li {
   }
   #search-button {
     border-radius: 1rem;
-    margin: -4px;
-    padding: 0px 20px 0px 20px;
+    margin: 0px 0px 0px -10px;
+    padding: 1.3rem 1.7rem;
   }
   #search-word {
     margin: -5px;
     font-size: 0px;
   }
   .fa-search {
-    width: 20px;
-    height: 20px;
+    width: 10px;
+    height: 10px;
     color: white;
   }
   #housing-main h3 {
@@ -735,7 +739,7 @@ li {
     width: 450px;
   }
   .search-form {
-    transform: scale(0.90);
+    transform: scale(0.95);
   }
   .main-housing-article img {   
     width: 405px; 
