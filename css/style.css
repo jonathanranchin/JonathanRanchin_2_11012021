@@ -127,6 +127,10 @@ li {
   display: flex;
   flex-direction: row;
   margin: -3px;
+  font-family: 'Raleway';
+}
+.site-search::-moz-placeholder {
+  font-family: 'Raleway', sans-serif;  
 }
 .logo-holder-research-bar {
   display: flex;
@@ -194,12 +198,18 @@ li {
 #search-button {
   background-color: #0065FC;
   color: white;
+  font-family: 'Raleway';
   font-weight: bold;
   border: none;
   border-radius: 0 1rem 1rem 0;
   padding: 0 1.5rem;
   font-size: 1rem;
   cursor: pointer;
+}
+.fa-search {
+  color: rgb(0, 101, 252);
+  width: 0px;
+  height: 0px;
 }
 .site-search {
   border-right: none;
@@ -600,6 +610,20 @@ li {
   .nav-bar-right-header {
     width: 190px;
     height: 60px ;
+  }
+  #search-button {
+    border-radius: 1rem;
+    margin: -4px;
+    padding: 0px 20px 0px 20px;
+  }
+  #search-word {
+    margin: -5px;
+    font-size: 0px;
+  }
+  .fa-search {
+    width: 20px;
+    height: 20px;
+    color: white;
   }
   #housing-main h3 {
     margin: 0px;
