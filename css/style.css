@@ -701,3 +701,25 @@ li {
     width: 100%;
   }
 }
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 667px) 
+  and (-webkit-min-device-pixel-ratio: 2) { 
+
+}
+@media screen and (max-width: 376px) {
+  body {
+    width: 100%;
+  }
+  .popular-housing,
+  .item-long, 
+  .item-middle, 
+  .item-small,
+  .popular-housing  {
+   width: 370px;
+  } 
+  #flex-right-nav, 
+  #housing-section {
+    width: 370px;
+  }
+}
