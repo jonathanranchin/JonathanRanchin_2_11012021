@@ -2,7 +2,7 @@
    This CSS follows the order of the HTML
    Parts : Header, Searchbar and Filters,
            Main sections (3 parts), 
-           Footer, Mobile Breakpoints (5 points)
+           Footer, Mobile Breakpoints (5git checkout points)
 */
 @font-face {
   font-family: 'Raleway';
@@ -510,8 +510,11 @@ li {
   }
 }
 @media screen and (max-width: 769px) {
+  .main-housing-article {
+    margin: 1%;
+  }
   .main-housing-article img {    
-    width: 100%;
+    min-width: 100%;
     height: 185px;
   }
   .popular-housing-article  {
@@ -641,6 +644,16 @@ li {
   .filter-holder{
     margin: 2%;
   }
+  .research-filter-container h3 {
+    margin-right: 400px;
+    margin-bottom: 10px ;
+  }
+  .search-filter-figure {
+    padding-left: 2px; ;
+  }
+  .search-bar-filter {
+    margin: 5px 10px;
+  }
   #housing-section {
     display: flex;
     flex-flow: column wrap;
@@ -664,10 +677,13 @@ li {
     min-width: 50%;
   }
   .main-housing-article a {
-    padding: 10px;
+    padding: 8px;
+  }
+  .main-housing-article {
+    width: 97%;
   }
   .main-housing-article img {
-    width: 100%;
+    min-width: 465px;
     margin: 0px;
     min-height: 180px;
   }
@@ -714,8 +730,12 @@ li {
     background-color: white;
     max-width: 98%;
   }
+  .main-housing-article a {
+    padding: 4px;
+  }
   .main-housing-article img {   
-    width: 100%; 
+    min-width: 420px;
+    /* min-width: 100%; */
     height: 146px;
   }
   #activity-background {
@@ -749,5 +769,4 @@ li {
   #activity-container {
     width: 96%;
   }
-
 }
