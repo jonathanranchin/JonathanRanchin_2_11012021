@@ -2,7 +2,7 @@
    This CSS follows the order of the HTML
    Parts : Header, Searchbar and Filters,
            Main sections (3 parts), 
-           Footer, Mobile Breakpoints (4 points)
+           Footer, Mobile Breakpoints (5 points)
 */
 @font-face {
   font-family: 'Raleway';
@@ -219,6 +219,7 @@ li {
   width: 15rem;
   font-size: 1.23rem;
   font-weight: bold;
+  font-family: 'Raleway';
 }
 .svg-icon {   
   width: 100%;
